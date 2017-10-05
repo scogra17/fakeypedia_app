@@ -1,0 +1,146 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles3.css') }}">
+	<title>Welcome to Fakeypedia</title>
+</head>
+
+<body>
+
+<!-- <textarea rows="4" cols="50" name="information" form="usrform">
+Enter text here...</textarea> -->
+
+
+<div id="content" class ="mw-body" role="main">
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">
+		Welcome to Fakeypedia! Use responsibly! 
+	</h1>
+	<h3>
+		How to use:
+	</h3>
+	<ol>
+		<li>Get into unwinnable argument with friend.</li>
+		<li>Support your position with a custom Fakeypedia page using inputs below.</li>
+		<li>Show your friend.</li>
+		<li>"Win" argument.</li>
+		<li>Tell your friends they've been duped.</li>
+		<li>Ultimately lose argument and, possibly, credibility.</li>
+	</ol>
+	</br>
+
+	<form class="form" action="{{url_for('configureFakey')}}" id="usrform" method = 'post'>
+	<input type='text' size='30' name='title' placeholder='Title here'>
+	</br></br><input type='text' size='60' name='information' placeholder='Info here'>
+	</br></br><input type='text' size='60' name='image_caption' placeholder='Image caption here'>
+	</br></br><input type='submit' value='Create Fakeypedia page'>
+</form>
+	</br>
+
+	<h3 lang="en">
+		Template
+	</h3>
+
+	<h1 id="firstHeading" class="firstHeading input_holder" lang="en">
+		[TITLE]
+	</h1>
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">
+			From Wikipedia, the free encyclopedia
+		</div>
+		<div id="mw-content-text" class="mw-content-ltr">
+			<div class="mw-parser-output">
+				<div role="note" class="hatnote navigation-not-searchable">
+					For other uses, see 
+					<a href="#" title="#">
+						[TITLE] (disambiguation)
+					</a>. 
+				</div>
+				<div class="thumb tright">
+					<div class="thumbinner" style="width:252px;">
+						<a href="" class="image">
+							<img alt="[IMAGE]" src="" data-file-width="561" data-file-height="368">
+						</a>
+						<div class="thumbcaption">
+							<div class="magnify">
+								<a href="/wiki/File:Akashi-kaikyo_bridge3.jpg" class="internal" title="Enlarge"></a>
+							</div>
+							[IMAGE CAPTION]
+						</div>
+					</div>
+				</div>
+			</div>
+			<p>
+				Filler
+			</p>
+			<div id="toc" class="toc">
+				<div class="toctitle">
+					<h2>Contents</h2>
+					<span class="toctoggle">&nbsp;[<a role="button" tabindex="0" class="togglelink">hide</a>]&nbsp;</span>
+				</div>
+				<ul>
+					<li class="toclevel-1 tocsection-1"><a href="#"><span class="tocnumber">1</span> <span class="toctext">Subtitle 1</span></a></li>
+					<li class="toclevel-1 tocsection-2"><a href="#"><span class="tocnumber">2</span> <span class="toctext">Subtitle 2</span></a></li>
+					<li class="toclevel-1 tocsection-2"><a href="#"><span class="tocnumber">2</span> <span class="toctext">Subtitle 3</span></a></li>
+				</ul>
+			</div>
+			<h2>
+				<span class="mw-headline" id="Etymology">
+					Subtitle 1
+				</span>
+				<span class="mw-editsection">
+					<span class="mw-editsection-bracket">[
+					</span>
+					<a href="/w/index.php?title=Bridge&amp;action=edit&amp;section=1" title="Edit section: Etymology">
+						edit
+					</a>
+					<span class="mw-editsection-bracket">]
+					</span>
+				</span>
+			</h2>
+			<p>
+				<b>[CONTENT]</b> + Filler
+			</p>
+
+			<h2>
+				<span class="mw-headline" id="Etymology">
+					Subtitle 2
+				</span>
+				<span class="mw-editsection">
+					<span class="mw-editsection-bracket">[
+					</span>
+					<a href="/w/index.php?title=Bridge&amp;action=edit&amp;section=1" title="Edit section: Etymology">
+						edit
+					</a>
+					<span class="mw-editsection-bracket">]
+					</span>
+				</span>
+			</h2>
+			<p>
+				Filler
+			</p>
+
+			<h2>
+				<span class="mw-headline" id="Etymology">
+					Subtitle 3
+				</span>
+				<span class="mw-editsection">
+					<span class="mw-editsection-bracket">[
+					</span>
+					<a href="/w/index.php?title=Bridge&amp;action=edit&amp;section=1" title="Edit section: Etymology">
+						edit
+					</a>
+					<span class="mw-editsection-bracket">]
+					</span>
+				</span>
+			</h2>
+			<p>
+				Filler
+			</p>
+
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
